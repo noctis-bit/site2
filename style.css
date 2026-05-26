@@ -290,6 +290,9 @@ body {
   width: 100%; height: 100%; object-fit: cover;
   transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+.product-img-wrap img.img-align-top {
+  object-position: center top;
+}
 .product-card:hover .product-img-wrap img { transform: scale(1.08); }
 
 .product-overlay {
@@ -406,10 +409,11 @@ body {
 .about { padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
 .about-grid { display: grid; grid-template-columns: 1fr; gap: 40px; }
 .about-img {
-  aspect-ratio: 4/3; overflow: hidden;
+  aspect-ratio: 3/4; overflow: hidden;
 }
 .about-img img {
   width: 100%; height: 100%; object-fit: cover;
+  object-position: center top;
   transition: transform 0.8s ease;
 }
 .about-img:hover img { transform: scale(1.03); }
